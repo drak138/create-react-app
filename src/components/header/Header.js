@@ -7,6 +7,8 @@ import validator from 'validator'
 import { Routes,Route,Link} from 'react-router-dom';
 import  Follow  from './prices/Prices';
 
+//something for the show//
+
 export const Header = (props) =>{
 
 
