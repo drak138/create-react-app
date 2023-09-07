@@ -1,0 +1,310 @@
+body{
+    margin: 1px;
+    background-color:rgb(21 32 40);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.container img{
+    position: relative;
+    width: 20rem;
+}
+@media (max-width:470px){
+    .container img{
+        width: 80%;
+    }
+    
+}
+.container button{
+    float: right;
+    background: none;
+    border: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.container .button:hover{
+border-bottom: solid 2px white;
+margin-top: 5px;
+}
+img:hover{
+    cursor: pointer;
+}
+
+.register{
+    max-width: 523px;
+width: 90%;
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+z-index: 2;
+top:3rem;
+background-color: rgb(119 128 255 / 96%);
+}
+.register div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.register div div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.register div div label{
+    font-size: 1.5rem;
+}
+.register div div input{
+    outline: 0;
+    left: 5px;
+    height: 33px;
+    width: 96%;
+    position: relative;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-width: 2px;
+    border-style: inset;
+    background-color: field;
+    font-size: 1.5rem;
+}
+.register div div label:hover{
+    cursor: pointer;
+}
+.register div div button{
+    border: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-width: 2px;
+    border-style: inset;
+    background-color: field;
+}
+.register div div button:hover{
+    margin: 0;
+}
+.registerBTN:hover{
+    cursor: pointer;
+}
+.login{
+width: 53%;
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+z-index: 2;
+top:3rem;
+background-color: rgb(119 128 255 / 96%);
+display: flex;
+flex-direction: column;
+gap: 1rem;
+max-width: 524px;
+min-width: 330px;
+}
+.login div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.login div div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.login div div label{
+    font-size: 1.5rem;
+}
+.login div div input{
+    outline: none;
+    left: 5px;
+    height: 33px;
+    width: 96%;
+    position: relative;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-width: 2px;
+    border-style: inset;
+    background-color: field;
+    font-size: 1.5rem;
+}
+.login div div label:hover{
+    cursor: pointer;
+}
+.login div div button{
+    border: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-width: 2px;
+    border-style: inset;
+    background-color: field;
+}
+.login div div button:hover{
+    margin: 0;
+    border: none;
+
+}
+.UserName{
+    color: white;
+    font-size: 1.2rem;
+}
+.UserName:hover{
+    cursor: pointer;
+}
+.profile{
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.profile ul{
+    padding: 0;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.editProfile{
+    max-width: 457px;
+    width: 89%;
+    background-color: rgb(70, 80, 124);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    height: fit-content;
+    z-index: 3;
+    gap: 20px;
+}
+.Name{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 20px;
+    color: white;
+    margin-left: 5px;
+}
+.Name input{
+    font-size: 20px;
+    width: 17rem;
+}
+.Email{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 20px;
+    color: white;
+    margin-left:5px;
+}
+.Email input{
+    font-size: 20px;
+    width: 19.2rem;
+}
+.Email p{
+    margin-right: 8.8rem;
+}
+.change{
+    display: flex;
+    justify-content: space-between;
+}
+.passwords div{
+    width: 68.7%;
+    margin: 0px 0px 0px 1%;
+    flex-direction: row;
+    background-color: white;
+    border-width: 2px;
+    border-style: inset;
+    border-color: rgb(118, 118, 118) rgb(133, 133, 133) rgb(133, 133, 133) rgb(118, 118, 118);
+    border-image: initial;
+}
+
+.deleteProfile{
+    display: flex;
+    flex-direction: column;
+}
+.deleteProfile div{
+    margin: 0 23px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.passwords{
+    flex-wrap: wrap;
+}
+@media(max-width:504px) {
+.passwords{
+    width: 100%;
+}
+}
+.followWrapper{
+    position: absolute;
+    border: 2px solid white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(70, 80, 124);
+    width: 76%;
+    height: 32rem;
+    top: 6rem;
+    z-index: 2;
+    color: white;
+}
+.followEth{
+    margin-left: 1%;
+}
+.Forgot{
+    max-width: 523px;
+    width: 90%;
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+background-color: purple;
+z-index: 2;
+top:3rem;
+background-color: rgb(119 128 255 / 96%);
+}
+.Forgot div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.Forgot div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.Forgot div label{
+    font-size: 1.5rem;
+}
+.Forgot div input{
+    outline: none;
+    left: 5px;
+    height: 33px;
+    width: 96%;
+    position: relative;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-width: 2px;
+    border-style: inset;
+    background-color: field;
+    font-size: 1.5rem;
+}
+.Forgot div label:hover{
+    cursor: pointer;
+}
+.Forgot button{
+    margin-top: 2rem;
+    padding: 0 13rem;
+}
+.Forgot div button:hover{
+    margin: 0;
+    border: none;
+
+}
