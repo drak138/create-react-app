@@ -376,7 +376,7 @@ export const Header = (props) =>{
 
     return(
         <header style={styles} className={styles.container}>
-            <Link  to="/create-react-app/" src={"./logo.png"}><img onClick={showInterested} src={require ("./logo.png")} alt="logo here" /><></></Link>
+            <Link  to="/create-react-app" src={"./logo.png"}><img onClick={showInterested} src={require ("./logo.png")} alt="logo here" /><></></Link>
             {
             CurUser?
             <div 
